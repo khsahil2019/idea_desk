@@ -1,0 +1,31 @@
+name: idea_desk
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: # Added for localization
+    sdk: flutter
+  intl: ^0.19.0 # Updated to latest stable version as of now
+  cupertino_icons: ^1.0.8
+  get: ^4.7.2
+  file_picker: ^9.0.1
+  pdf: ^3.11.3
+  printing: ^5.14.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/img/
+  generate: true # Added to enable localization code generation
