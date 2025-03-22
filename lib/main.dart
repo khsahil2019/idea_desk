@@ -19,7 +19,58 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter UI',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: MainScreen(),
+      home: IntermediateScreen(),
+    );
+  }
+}
+
+// Intermediate Screen
+class IntermediateScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Choose Your Option'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Get.to(() => MainScreen()); // Navigate to MainScreen
+              },
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.teal,
+                backgroundColor: Colors.white,
+                side: const BorderSide(color: Colors.teal, width: 2),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                minimumSize: const Size(200, 50),
+              ),
+              child: const Text('Idea', style: TextStyle(fontSize: 18)),
+            ),
+            const SizedBox(height: 20),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Get.to(() => MainScreen()); // Navigate to MainScreen
+            //   },
+            //   style: ElevatedButton.styleFrom(
+            //     foregroundColor: Colors.teal,
+            //     backgroundColor: Colors.white,
+            //     side: const BorderSide(color: Colors.teal, width: 2),
+            //     shape: RoundedRectangleBorder(
+            //       borderRadius: BorderRadius.circular(12),
+            //     ),
+            //     minimumSize: const Size(200, 50),
+            //   ),
+            //   child:
+            //       const Text('Business Plan', style: TextStyle(fontSize: 18)),
+            // ),
+          ],
+        ),
+      ),
     );
   }
 }

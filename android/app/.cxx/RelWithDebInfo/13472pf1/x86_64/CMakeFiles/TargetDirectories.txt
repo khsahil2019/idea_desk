@@ -1,0 +1,2 @@
+/Users/sahilkhan/FlutterDev/Crux Company/idea_desk/android/app/.cxx/RelWithDebInfo/13472pf1/x86_64/CMakeFiles/edit_cache.dir
+/Users/sahilkhan/FlutterDev/Crux Company/idea_desk/android/app/.cxx/RelWithDebInfo/13472pf1/x86_64/CMakeFiles/rebuild_cache.dir
